@@ -71,18 +71,20 @@ const moveCircles = (num) => {
       toMove = false;
       for (let i = 0; i < 5; i++) {
         translateOneStep(circles[i], side);
-        setTimeout(() => {
-          toMove = true;
-        }, 1000);
       }
-    } else {
-      toMove = false;
       setTimeout(() => {
+        toMove = true;
+      }, 1600);
+    } else {
+      setTimeout(() => {
+        toMove = false;
         for (let i = 0; i < 5; i++) {
           translateOneStep(circles[i], side);
-          toMove = true;
         }
       }, 1600);
+      setTimeout(() => {
+        toMove = true;
+      }, 3200);
     }
   }
 };

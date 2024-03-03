@@ -27,10 +27,29 @@ body{
     display: block;
     height: calc(100vh - 160px);
     border-radius: 10px;
-    color: var(--bg3);
+    color: white;
 }
 
 
+.content{
+    display: block;
+    text-shadow: 0px 0px 10px var(--bg3);
+    font-weight: bold;   
+    font-size: 20px;
+    letter-spacing: 2px;
+    opacity: 1;
+}
+
+.wave{
+    color: var(--bg1);
+    font-size: 32px;
+    animation: wave 1s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes wave {
+    0% {transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
 /* for navigation style */
 .box{
     display: block;
