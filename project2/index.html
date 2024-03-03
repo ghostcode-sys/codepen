@@ -8,10 +8,20 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="btnDiv">
-            <button class="btn">Home</button>
+        <div class="btnDiv active" onclick="changeClass(0)">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="btnDiv" onclick="changeClass(1)">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="btnDiv" onclick="changeClass(2)">
+            <i class="fa-solid fa-code-branch"></i>
+        </div>
+        <div class="btnDiv" onclick="changeClass(3)">
+            <i class="fa-solid fa-message"></i>
         </div>
     </nav>
+    <script src="https://kit.fontawesome.com/09453d8add.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
