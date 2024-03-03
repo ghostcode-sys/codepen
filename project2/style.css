@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     --color: #e5e9f4;
-    --blColor: #000000a5;
 }
 
 body{
@@ -12,6 +11,8 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: var(--color);
+    display: flex;
+    align-items: center;
 }
 
 .navbar{
@@ -21,15 +22,34 @@ body{
     align-items: center;
     width: 100%;
     height: 70px;
-    border: 2px solid var(--blColor);
 }
 
 
 .btnDiv{
     width: 50px;
-    border:  2px solid black;
+    border:  3px solid var(--color);
     height: 50px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: auto;
     border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    transition: all 0.5s;
+    
+}
+
+.btnDiv:hover{
+    box-shadow: 0px 0px 4px 2px #c1c4ce, 0px 0px 2px 2px #9fa2ac , 0px 0px 2px 2px #c9ceda inset;
+}
+
+.active{
+    color: magenta;
+    box-shadow:  2px 4px 2px #c1c4ce, -2px -2px 2px 2px #9fa2ac;
+}
+
+.active:hover{
+    box-shadow:  2px 4px 2px #c1c4ce, -2px -2px 2px 2px #9fa2ac;
 }
